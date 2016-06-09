@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\\name{check.vote.sample}\n\\alias{check.vote.sample}\n%- Also NEED an '\\alias' for EACH other topic documented here.\n\\title{\n function for class demos\n}\n\\description{\nfunction for class demos\n}\n\\usage{\ncheck.vote.sample(population.dist, candidate.names = NULL, sample.dist, loop.number, sample.size)\n}\n%- maybe also 'usage' for other objects documented here.\n\\arguments{\n  \\item{population.dist}{\n%%     ~~Describe \\code{population.dist} here~~\n}\n  \\item{candidate.names}{\n%%     ~~Describe \\code{candidate.names} here~~\n}\n  \\item{sample.dist}{\n%%     ~~Describe \\code{sample.dist} here~~\n}\n  \\item{loop.number}{\n%%     ~~Describe \\code{loop.number} here~~\n}\n  \\item{sample.size}{\n%%     ~~Describe \\code{sample.size} here~~\n}\n}\n\\details{\n%%  ~~ If necessary, more details than the description above ~~\n}\n\\value{\n%%  ~Describe the value returned\n%%  If it is a LIST, use\n%%  \\item{comp1 }{Description of 'comp1'}\n%%  \\item{comp2 }{Description of 'comp2'}\n%% ...\n}\n\\references{\n%% ~put references to the literature/web site here ~\n}\n\\author{\nZhihan Fang\n}\n\\note{\n%%  ~~further notes~~\n}\n\n%% ~Make other sections like Warning with \\section{Warning }{....} ~\n\n\\seealso{\n%% ~~objects to See Also as \\code{\\link{help}}, ~~~\n}\n\\examples{\npopulation.dist = c(.34,.35,.23)\ncandidate.names = c('Hillary','Trump','Bernie')\nsample.dist = c(.33,.36,.3)\nloop.number = 10000\nsample.size = 100\n\ncheck.vote.sample(population.dist = population.dist ,candidate.names = candidate.names ,sample.dist = sample.dist, sample.size = 100 ,loop.number = loop.number)\n\n\n}\n% Add one or more standard keywords, see file 'KEYWORDS' in the\n% R documentation directory.\n\\keyword{ ~kwd1 }% use one of  RShowDoc(\"KEYWORDS\")\n\\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line\n",
+    "created" : 1465490437782.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4240226543",
+    "id" : "F594252A",
+    "lastKnownWriteTime" : 1465491035,
+    "last_content_update" : 1465491035283,
+    "path" : "C:/Users/zhihan/workspace/data_literacy/package/data101/man/check.vote.sample.Rd",
+    "project_path" : "man/check.vote.sample.Rd",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_doc"
+}

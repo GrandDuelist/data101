@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "check.vote.sample <- function(population.dist,candidate.names=NULL,sample.dist,loop.number,sample.size){\n\n\n  if (length(population.dist) != length(sample.dist)){\n    print(\"sample distribution size shoud be identical to the population candidate number\")\n    return(-1)\n  }\n\n  candidate.number <- length(population.dist)\n  vote.dist <- matrix(ncol = candidate.number,nrow = loop.number)\n\n  x <- c(1:candidate.number)\n  if(!is.null(candidate.names)){\n    colnames(vote.dist) <- candidate.names\n  }\n\n  for(i in 1:loop.number){\n    g.sample <- sample(x=x,size=sample.size,replace = TRUE,prob=population.dist)\n    stat <- table(g.sample)\n    dist <- stat/sample.size\n    vote.dist[i,] <- dist\n  }\n\n  width <- sqrt(candidate.number)\n  width <- ceiling(width)\n  par(mfrow=c(width,width))\n  col.names <- colnames(vote.dist)\n\n\n  for(i in 1:ncol(vote.dist)){\n    title = paste(\"pop.dist =\",population.dist[i], 'sample.dis =' ,sample.dist[i])\n    hist(vote.dist[,i],main = col.names[i],xlab = title,xlim=c(0,1))\n    abline(v=sample.dist[i],col='red')\n  }\n\n}\n\n",
+    "created" : 1465489779421.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3848974314",
+    "id" : "A93206DA",
+    "lastKnownWriteTime" : 1465491085,
+    "last_content_update" : 1465491085565,
+    "path" : "C:/Users/zhihan/workspace/data_literacy/package/data101/R/check.vote.sample.r",
+    "project_path" : "R/check.vote.sample.r",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
